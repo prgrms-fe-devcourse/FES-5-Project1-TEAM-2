@@ -32,7 +32,8 @@ project-root/
 │   ├── api.js
 │   ├── controller.js
 │   ├── {기능이름}.css
-│   └── animation.js (필요시)
+│   ├── index.js (export)
+│   └── animation.js (예시)
 ├── package.json
 └── README.md
 ```
