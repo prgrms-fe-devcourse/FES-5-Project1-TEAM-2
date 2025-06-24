@@ -98,15 +98,14 @@ project-root/
 
 ### 브랜치 생성 규칙
 
-1. **GitHub Projects에서 TODO 생성**
-2. **Issue 번호 확인**
-3. **브랜치명 규칙**: `feat-{issue-number}-{기능이름}`
+
+**브랜치명 규칙**: `feat-{기능이름}`
 
 ```bash
 # 예시
-feat-123-user-login
-feat-456-product-search
-feat-789-payment-system
+feat-user-login
+feat-product-search
+feat-payment-system
 ```
 
 ### 브랜치 작업 플로우
