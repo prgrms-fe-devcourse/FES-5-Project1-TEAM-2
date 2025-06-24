@@ -47,9 +47,7 @@
 
                 이석주
 
-
 김영민
-
 
 ### (선택) B: README 파일에 CONTRIBUTING 파일의 링크를 첨부하세요.
 
@@ -58,4 +56,3 @@ https://github.com/prgrms-fe-devcourse/NFE5-GIT-TEAM-2B/blob/main/CONTRIBUTING.m
 ## default 보다 하나 더 많기 위한 변경사항 추가
 
                 김영민
-
