@@ -107,7 +107,6 @@
 }
 .sub-info {
   color: #858080;
-  text-align: center;
   font-size: 14px;
   font-weight: 400;
 }
@@ -122,5 +121,5 @@
   margin: 0 auto;
 }
 .contents-area {
-  padding: 15px;
+  margin: 15px;
 }
