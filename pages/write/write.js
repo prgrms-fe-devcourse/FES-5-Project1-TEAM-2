@@ -11,14 +11,9 @@ const submitButton = getNode('.submit-button');
 submitButton.addEventListener('click', handleSubmitButton);
 
 const tabButtons = getNode('.button-box');
-/**
- *
- * @param {void}
- * @returns {void}
- */
 
 /**
- * 버튼 클릭시 css 이동
+ * write, preview 버튼 css 핸들링
  * @param {void}
  * @returns {void}
  */
