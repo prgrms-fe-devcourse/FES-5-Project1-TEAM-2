@@ -67,3 +67,13 @@ textarea {
   color: white;
   margin: 0 auto;
 }
+
+.preview {
+  width: 650px;
+  height: 400px;
+  resize: none;
+  border: 2px solid #9b0e17;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
