@@ -1,3 +1,4 @@
+import { setupRouter, renderPage } from './router.js';
 import { auth } from './auth/index.js';
 import { setBoardDataList, setRankData } from './lib/dom/data.js';
 import { setDate } from './lib/dom/render.js';
@@ -19,5 +20,11 @@ function init() {
   // 로그인
   auth.init();
 }
+// 라우터 초기화
+setupRouter();
+
+// 초기 페이지 렌더링
+renderPage(window.location.pathname || '/');
+document.getElementById('app').style.opacity = 1;
 
 document.addEventListener('DOMContentLoaded', init);
