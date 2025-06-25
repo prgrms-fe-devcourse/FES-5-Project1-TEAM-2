@@ -36,41 +36,31 @@
       "id": 1,
       "name": "kimTeam",
       "score": 95,
-      "member": [
-        "kim"
-      ]
+      "member": ["kim"]
     },
     {
       "id": 2,
       "name": "parkTeam",
       "score": 195,
-      "member": [
-        "park"
-      ]
+      "member": ["park"]
     },
     {
       "id": 3,
       "name": "naTeam",
       "score": 10,
-      "member": [
-        "park"
-      ]
+      "member": ["park"]
     },
     {
       "id": 4,
       "name": "bulkTema",
       "score": 200,
-      "member": [
-        "park"
-      ]
+      "member": ["park"]
     },
     {
       "id": 5,
       "name": "clock",
       "score": 450,
-      "member": [
-        "park"
-      ]
+      "member": ["park"]
     }
   ],
   "freeBoard": [
@@ -84,7 +74,7 @@
       "updatedAt": "25.06.11.14:00"
     },
     {
-      "id": 1,
+      "id": 2,
       "category": "dsfa",
       "title": "asda",
       "contents": "asdfafaf",
@@ -93,7 +83,7 @@
       "updatedAt": "2025. 6. 25. 오후 1:44:00"
     },
     {
-      "id": 1,
+      "id": 3,
       "category": "test",
       "title": "test",
       "contents": "testest",
@@ -104,7 +94,7 @@
   ],
   "groupBoard": [
     {
-      "id": 1,
+      "id": 4,
       "category": "스터디 구인",
       "title": "10번 알고리즘 문제 리뷰할 사람 찾아요~",
       "contents": "",

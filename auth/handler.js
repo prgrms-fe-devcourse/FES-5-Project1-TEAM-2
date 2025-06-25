@@ -1,12 +1,14 @@
 import { elements } from './dom.js';
 import { GITHUB_CONFIG } from './config.js';
+import { showToast } from '../toast/index.js';
 
 export const authHandlers = {
   /**
    * 로그인 모달 열기
    */
   handleOpenLoginMal() {
-    elements.loginModal.classList.add('show');
+    showToast({ message: '야호', type: 'success' });
+    // elements.loginModal.classList.add('show');
   },
   /**
    * 로그인 모달 닫기

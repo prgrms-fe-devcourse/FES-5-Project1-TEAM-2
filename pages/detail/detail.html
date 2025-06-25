@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CO-DIVE</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
     <link rel="icon" href="./assets/co-dive.png" />
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <link href="./reset.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/styles/auth.css" />
-    <link rel="stylesheet" href="/styles/ranking.css" />
-    <link rel="stylesheet" href="/styles/comunity.css" />
-    <link href="./style.css" rel="stylesheet" />
-    <script type="module" src="./main.js"></script>
+    <link href="../../reset.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../styles/auth.css" />
+    <link rel="stylesheet" href="../../styles/ranking.css" />
+    <link rel="stylesheet" href="../../styles/comunity.css" />
+    <link href="../../style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./detail.css" />
+
+    <script type="module" src="./detail.js"></script>
   </head>
 
   <body>
@@ -77,52 +79,81 @@
           <button type="button" id="logout">&lt;logout/&gt;</button>
         </div>
       </nav>
-      <!-- 캐러셀 -->
-      <div class="swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img data-swiper-parallax-scale="1.2" data-swiper-parallax-x="200" src="./assets/swiper/1.png" alt="눈물" />
+      <div class="board-container">
+        <div class="board-list-content">
+          <div class="button-contents">
+            <button class="board-list-button is-button-active">free</button>
+            <button class="board-list-button">study</button>
           </div>
-          <div class="swiper-slide">
-            <img data-swiper-parallax-scale="1.2" data-swiper-parallax-x="200" src="./assets/swiper/2.png" alt="열일" />
-          </div>
-          <div class="swiper-slide">
-            <img data-swiper-parallax-scale="1.2" data-swiper-parallax-x="200" src="./assets/swiper/3.png" alt="뒤짐" />
+          <div class="board-list">
+            <ul class="board-list-ul"></ul>
           </div>
         </div>
-      </div>
-
-      <div class="rankingSection">
-        <div class="rankingHeader">
-          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M7.40598 31.4903V28.0612H14.2641V22.7462C12.8639 22.4319 11.6137 21.8389 10.5136 20.9674C9.41341 20.0958 8.60615 19.0028 8.09179 17.6883C5.94863 17.4311 4.15551 16.4953 2.71245 14.8808C1.26938 13.2663 0.547852 11.3731 0.547852 9.20138V7.48685C0.547852 6.54386 0.883614 5.7366 1.55514 5.06507C2.22666 4.39355 3.03392 4.05779 3.97692 4.05779H7.40598V0.628723H24.5513V4.05779H27.9804C28.9234 4.05779 29.7306 4.39355 30.4021 5.06507C31.0737 5.7366 31.4094 6.54386 31.4094 7.48685V9.20138C31.4094 11.3731 30.6879 13.2663 29.2448 14.8808C27.8018 16.4953 26.0087 17.4311 23.8655 17.6883C23.3511 19.0028 22.5439 20.0958 21.4437 20.9674C20.3436 21.8389 19.0934 22.4319 17.6932 22.7462V28.0612H24.5513V31.4903H7.40598ZM7.40598 14.0021V7.48685H3.97692V9.20138C3.97692 10.2873 4.29125 11.266 4.91991 12.1375C5.54857 13.0091 6.37726 13.6306 7.40598 14.0021ZM15.9786 19.4886C17.4074 19.4886 18.6219 18.9885 19.622 17.9884C20.6222 16.9882 21.1222 15.7738 21.1222 14.345V4.05779H10.835V14.345C10.835 15.7738 11.3351 16.9882 12.3353 17.9884C13.3354 18.9885 14.5499 19.4886 15.9786 19.4886ZM24.5513 14.0021C25.58 13.6306 26.4087 13.0091 27.0374 12.1375C27.666 11.266 27.9804 10.2873 27.9804 9.20138V7.48685H24.5513V14.0021Z"
-              fill="#FFCE2D"
-            />
-          </svg>
-          <span class="label">랭킹 조회</span>
-          <span class="updatedDate">2025.06.17</span>
-        </div>
-        <div class="rankingContentsBox">
-          <div class="rankingContents" id="team">
-            <h3>Team</h3>
+        <div class="board-detail-content">
+          <div class="button-area">
+            <a href="#">
+              <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M1.58139 0L0.171387 1.41L4.75139 6L0.171387 10.59L1.58139 12L7.58139 6L1.58139 0Z"
+                  fill="black"
+                />
+                <path
+                  d="M8.17123 0L6.76123 1.41L11.3412 6L6.76123 10.59L8.17123 12L14.1712 6L8.17123 0Z"
+                  fill="black"
+                />
+              </svg>
+            </a>
+            <div class="writer-button">
+              <a href="#">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_227_194)">
+                    <path
+                      d="M3 21.0001H6.75L17.81 9.94006L14.06 6.19006L3 17.2501V21.0001ZM5 18.0801L14.06 9.02006L14.98 9.94006L5.92 19.0001H5V18.0801Z"
+                      fill="black"
+                    />
+                    <path
+                      d="M18.3699 3.29006C17.9799 2.90006 17.3499 2.90006 16.9599 3.29006L15.1299 5.12006L18.8799 8.87006L20.7099 7.04006C21.0999 6.65006 21.0999 6.02006 20.7099 5.63006L18.3699 3.29006Z"
+                      fill="black"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_227_194">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+              <a href="#">
+                <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3 18C2.45 18 1.97933 17.8043 1.588 17.413C1.196 17.021 1 16.55 1 16V3C0.716667 3 0.479 2.90433 0.287 2.713C0.0956668 2.521 0 2.28333 0 2C0 1.71667 0.0956668 1.479 0.287 1.287C0.479 1.09567 0.716667 1 1 1H5C5 0.716667 5.096 0.479 5.288 0.287C5.47933 0.0956666 5.71667 0 6 0H10C10.2833 0 10.521 0.0956666 10.713 0.287C10.9043 0.479 11 0.716667 11 1H15C15.2833 1 15.5207 1.09567 15.712 1.287C15.904 1.479 16 1.71667 16 2C16 2.28333 15.904 2.521 15.712 2.713C15.5207 2.90433 15.2833 3 15 3V16C15 16.55 14.8043 17.021 14.413 17.413C14.021 17.8043 13.55 18 13 18H3ZM5 13C5 13.2833 5.096 13.5207 5.288 13.712C5.47933 13.904 5.71667 14 6 14C6.28333 14 6.521 13.904 6.713 13.712C6.90433 13.5207 7 13.2833 7 13V6C7 5.71667 6.90433 5.479 6.713 5.287C6.521 5.09567 6.28333 5 6 5C5.71667 5 5.47933 5.09567 5.288 5.287C5.096 5.479 5 5.71667 5 6V13ZM9 13C9 13.2833 9.096 13.5207 9.288 13.712C9.47933 13.904 9.71667 14 10 14C10.2833 14 10.521 13.904 10.713 13.712C10.9043 13.5207 11 13.2833 11 13V6C11 5.71667 10.9043 5.479 10.713 5.287C10.521 5.09567 10.2833 5 10 5C9.71667 5 9.47933 5.09567 9.288 5.287C9.096 5.479 9 5.71667 9 6V13Z"
+                    fill="black"
+                  />
+                </svg>
+              </a>
+            </div>
           </div>
-
-          <div class="rankingContents" id="personal">
-            <h3>Personal</h3>
+          <div class="board-info">
+            <div>
+              <span class="category">코테질문</span>
+              <span class="board-detail-title">제목입니다.</span>
+            </div>
+            <div>
+              <span class="sub-info sub-category">작성자</span>
+              <span class="sub-info writer">김영민</span>
+            </div>
+            <div>
+              <span class="sub-info sub-category">날짜</span>
+              <span class="sub-info writeDate">25.06.10.14:40</span>
+            </div>
+            <hr />
+          </div>
+          <div class="contents-area">
+            <div id="contents" class="contents"></div>
           </div>
         </div>
-      </div>
-
-      <div class="communitySection">
-        <div class="buttonBox">
-          <button id="free-board" class="is-button-active">자유게시판</button>
-          <button id="group-recruitment">그룹 구인 게시판</button>
-        </div>
-        <div class="communityContentsBox"></div>
       </div>
     </div>
-
     <footer>
       <p class="comment">CoDive는 함꼐하는 성장을 응원합니다.</p>
       <a href="https://github.com/codive-we-are-idle/coDive" target="_blank" rel="noopener noreferrer">

@@ -99,7 +99,6 @@ project-root/
 
 ### 브랜치 생성 규칙
 
-
 **브랜치명 규칙**: `feat-{기능이름}`
 
 ```bash
@@ -134,8 +133,9 @@ feat-payment-system
    feat: 새로운 기능 추가
    fix: 버그 수정
    docs: 문서 수정
-   style: 코드 포맷팅
+   fomat: 코드 포맷팅
    refactor: 코드 리팩토링
+   style: css , ul 업데이트
    test: 테스트 코드
    chore: 기타 변경사항
    ```
