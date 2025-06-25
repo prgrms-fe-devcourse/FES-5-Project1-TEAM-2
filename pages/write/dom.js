@@ -20,7 +20,7 @@ const createInputTags = label => {
  * @returns {HTMLDivElement} 태그 생성
  */
 const createTabButton = label => {
-  return `<button id="write-${label}-button" type="button" class="${label === 'write' ? 'is-button-active' : ''}">${label}</button>`;
+  return `<button id="write-${label}-button" type="button" class="${label === 'Write' ? 'is-button-active' : ''}">${label}</button>`;
 };
 
 /**
@@ -48,6 +48,6 @@ export const renderWriteTitle = () => {
  */
 export const renderTabButton = () => {
   const buttonBox = getNode('.button-box');
-  buttonBox.insertAdjacentHTML('beforeend', createTabButton('write'));
-  buttonBox.insertAdjacentHTML('beforeend', createTabButton('preview'));
+  buttonBox.insertAdjacentHTML('beforeend', createTabButton('Write'));
+  buttonBox.insertAdjacentHTML('beforeend', createTabButton('Preview'));
 };
