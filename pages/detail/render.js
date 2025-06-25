@@ -1,6 +1,6 @@
 import { getNode } from '../../lib/utils/getNode.js';
 import { createBoard } from './create.js';
-import { replaceMarkDown } from './markDownReplace.js';
+import { replaceMarkDown } from '../../lib/utils/markDownReplace.js';
 
 /**
  * @description 게시판 배열데이터를 dom요소에 추가한다.
