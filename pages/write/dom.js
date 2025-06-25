@@ -17,8 +17,8 @@ export const onChangeButtonCssClass = (nodeList, node) => {
  * @param {void}
  * @returns {void}
  */
-export const onChangeHiddenTextField = (textArea, preview) => {
-  if (textArea.hidden && !preview.hidden) {
+export const onChangeHiddenTextField = ({ textArea, preview, isWrite }) => {
+  if (isWrite) {
     preview.hidden = true;
     textArea.hidden = false;
   } else {

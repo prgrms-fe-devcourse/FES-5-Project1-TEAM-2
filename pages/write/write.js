@@ -1,6 +1,6 @@
 import { renderWriteCategory, renderWriteTitle, renderTabButton } from './render.js';
 import { getNode } from '../../lib/utils/getNode.js';
-import { handleWriteButton, handleSubmitButton } from './handler.js';
+import { handleTabButton, handleSubmitButton } from './handler.js';
 
 export const initWrite = () => {
   renderWriteCategory();
@@ -10,7 +10,7 @@ export const initWrite = () => {
   submitButton.addEventListener('click', handleSubmitButton);
 
   const tabButtons = getNode('.button-box');
-  tabButtons.addEventListener('click', handleWriteButton);
+  tabButtons.addEventListener('click', handleTabButton);
 };
 
 initWrite();

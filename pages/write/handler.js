@@ -20,7 +20,7 @@ export const handleSubmitButton = async e => {
  * @param {void}
  * @returns {void}
  */
-export const handleWriteButton = e => {
+export const handleTabButton = e => {
   const buttons = document.querySelectorAll('.button-box >button');
   const textArea = getNode('textArea');
   const clickedBtn = e.target;
@@ -28,11 +28,11 @@ export const handleWriteButton = e => {
 
   if (clickedBtn.tagName !== 'BUTTON') return;
   onChangeButtonCssClass(buttons, clickedBtn);
-
-  if (clickedBtn.id === 'write-Preview-button') {
-    onChangeHiddenTextField(textArea, preview);
+  console.log(clickedBtn.id);
+  if (clickedBtn.id === 'write-Write-button') {
+    onChangeHiddenTextField({ textArea, preview, isWrite: true });
     preview.innerHTML = replaceMarkDown(textArea.value);
   } else {
-    onChangeHiddenTextField(textArea, preview);
+    onChangeHiddenTextField({ textArea, preview, isWrite: false });
   }
 };
