@@ -8,13 +8,31 @@
     <link rel="icon" href="./assets/co-dive.png" />
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <link href="./reset.css" rel="stylesheet" />
+    <link href="../reset.css" rel="stylesheet" />
     <link rel="stylesheet" href="/styles/auth.css" />
     <link rel="stylesheet" href="/styles/ranking.css" />
     <link rel="stylesheet" href="/styles/comunity.css" />
-    <link href="./style.css" rel="stylesheet" />
+    <link href="./write.css" rel="stylesheet" />
     <script type="module" src="./main.js"></script>
   </head>
+  <body>
+    <div class="write-contents-box">
+      <div class="input-content">
+        <h1 class="label">Category</h1>
+        <input type="text" placeholder="입력해 주세요." />
+      </div>
+      <div class="input-content">
+        <h1 class="label">Title</h1>
+        <input type="text" placeholder="입력해 주세요." />
+      </div>
 
-  <body></body>
+      <div class="button-box">
+        <button type="button" class="is-button-active">write</button>
+        <button type="button">preview</button>
+      </div>
+
+      <textarea placeholder="입력해 주세요."></textarea>
+      <button type="submit" class="submit-button">작성완료</button>
+    </div>
+  </body>
 </html>
