@@ -73,23 +73,19 @@ nav a.active {
   button {
     padding: 0.5rem 1rem;
     width: 119px;
-    height: 36;
+    height: 36px;
     border-radius: 5px;
     font-size: 16px;
     font-weight: bold;
+    margin-right: 20px;
+    background: #f2f2f2;
+    color: #9b0e17;
+    border: 1px solid #c4c4c4;
   }
-}
-
-.write-button {
-  background: #9b0e17;
-  color: white;
-  margin-right: 20px;
-}
-
-.preview-button {
-  background: #f2f2f2;
-  color: #9b0e17;
-  border: 1px solid #c4c4c4;
+  .button-active {
+    background: #9b0e17;
+    color: white;
+  }
 }
 
 .list {

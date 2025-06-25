@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=1500, user-scalable=no" />
     <title>커뮤니티 - CoDive</title>
-    <link rel="stylesheet" href="../reset.css" />
-    <link rel="stylesheet" href="./api.css" />
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="./list.css" />
+    <script type="module" src="./list.js"></script>
   </head>
   <body>
     <!-- 네브바 -->
@@ -16,21 +17,14 @@
     <!-- 본문 컨테이너 -->
     <div class="container">
       <div class="button-group">
-        <button class="write-button">write</button>
-        <button class="preview-button">preview</button>
+        <button id="free-button" class="button-active">write</button>
+        <button id="group-button">preview</button>
       </div>
 
       <!-- 글 목록 -->
-      <div class="list">
+      <ul class="list">
         <!-- 예시 목록 10개 -->
-        <ul class="post-list">
-          <li class="post-item">
-            <span class="badge">코테질문</span>
-            <span class="post-title">커뮤니티 첫 글입니다!</span>
-            <span class="post-date">25.06.10 14:00</span>
-          </li>
-        </ul>
-      </div>
+      </ul>
 
       <!-- 페이지네이션 -->
       <div class="pagination">
@@ -41,24 +35,3 @@
     <!-- 푸터 -->
   </body>
 </html>
-
-<!--  api를 해보았다 -->
-<!-- <script>
-  fetch("{api주소}") 
-    .then(response => response.json())
-    .then(posts => {
-      const list = document.querySelector(".list");
-      list.innerHTML = ""; // 기존 더미 제거
-
-      posts.forEach(post => {
-        const item = document.createElement("div");
-        item.className = "post-item";
-        item.textContent = post.title; // 글 제목 표시
-
-        list.appendChild(item);
-      });
-    })
-    .catch(error => {
-      console.error("에러 발생:", error);
-    });
-</script> -->
