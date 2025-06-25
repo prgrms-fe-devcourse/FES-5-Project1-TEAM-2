@@ -121,6 +121,11 @@ samp {
   color: rgb(255, 255, 255);
 }
 
+input[type='checkbox'] {
+  appearance: auto;
+  -webkit-appearance: auto;
+}
+
 /* 14. 스크롤바 제거 (선택사항) */
 /* ::-webkit-scrollbar {
   width: 0;

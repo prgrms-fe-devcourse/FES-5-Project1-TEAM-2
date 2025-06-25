@@ -3,17 +3,17 @@
  * @param {number} duration
  */
 export const alertAnimation = duration => {
-  const alert = document.querySelector('.alert');
+  const toast = document.querySelector('.toast');
   const progressBar = document.querySelector('.progress-bar');
   const tl = gsap.timeline();
 
-  tl.set(alert, {
+  tl.set(toast, {
     opacity: 0,
     y: -50,
     scale: 0.8,
   })
     .set(progressBar, { width: '100%' })
-    .to(alert, {
+    .to(toast, {
       opacity: 1,
       y: 0,
       scale: 1,
@@ -29,7 +29,7 @@ export const alertAnimation = duration => {
       },
       0.4
     )
-    .to(alert, {
+    .to(toast, {
       opacity: 0,
       y: -50,
       scale: 0.8,

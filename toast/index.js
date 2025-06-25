@@ -18,17 +18,17 @@ export const showToast = ({ message, duration = 3000, type = 'success' }) => {
   const { icon, color } = configType[type];
 
   // 기존 토스트가 있으면 제거
-  const isExisting = document.querySelector('.alert');
+  const isExisting = document.querySelector('.toast');
   if (isExisting) {
     isExisting.remove();
   }
 
   // 새 토스트 엘리먼트 생성
-  const alert = document.createElement('div');
-  alert.className = 'alert';
+  const toast = document.createElement('div');
+  toast.className = 'toast';
 
   // innerHTML을 사용해서 내용 설정 (append 대신)
-  alert.innerHTML = `
+  toast.innerHTML = `
     <div class="icon">${icon}</div>
     <div class="message">${message}</div>
     <div class="progress-container">
@@ -37,10 +37,10 @@ export const showToast = ({ message, duration = 3000, type = 'success' }) => {
   `;
 
   // 배경색 동적 설정
-  alert.style.backgroundColor = color;
+  toast.style.backgroundColor = color;
 
   // body에 추가
-  document.body.appendChild(alert);
+  document.body.appendChild(toast);
 
   // 애니메이션 실행
   alertAnimation(duration);
