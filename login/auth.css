@@ -10,20 +10,15 @@ body {
   background-color: var(--bg);
   font-family: 'Inter';
   color: var(--bg);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(14px, 2.5vw, 16px);
 }
 
 .wrapper {
   display: flex;
-  position: absolute;
-  left: 50%;
-  top: 40%;
-  translate: -50% -50%;
-}
-
-.visual-wrapper {
-  img {
-    width: 450px;
-  }
 }
 
 .input-section {
@@ -31,10 +26,18 @@ body {
   flex-direction: column;
   padding: 30px;
   align-items: center;
+  width: 450px;
+  max-width: 450px;
+
+  /* 최대 너비 (이하) */
+  @media screen and (max-width: 767px) {
+    width: 370px;
+    padding: 5px;
+  }
 
   .logo {
     color: var(--text-primary);
-    font-size: 50px;
+    font-size: clamp(32px, 8vw, 50px);
     margin-bottom: 35px;
     letter-spacing: -3px;
   }
@@ -49,11 +52,11 @@ body {
   .input-label {
     display: block;
     color: var(--text-primary);
-    font-size: 1.4rem;
+    font-size: clamp(1.1rem, 2.5vw, 1.4rem);
   }
 
   .input {
-    width: 450px;
+    width: 100%;
     padding: 0.7rem;
     border: 1px solid var(--border);
     border-radius: 4px;
