@@ -1,4 +1,5 @@
 import { getNode } from '../../lib/utils/getNode.js';
+import { hideDetail, showDetail } from './animation.js';
 import { deleteBoardData, getBoardDetailData } from './controller.js';
 
 /**
@@ -8,9 +9,13 @@ import { deleteBoardData, getBoardDetailData } from './controller.js';
 export const handleBoardListClick = e => {
   e.preventDefault();
   const content = e.target.closest('a');
+  const boardDetail = getNode('.board-detail-content');
+
   if (content) {
     const boardId = content.getAttribute('data-id');
     getBoardDetailData(boardId, 'freeBoard');
+    boardDetail.hidden = false;
+    showDetail();
   }
 };
 
@@ -27,5 +32,17 @@ export const handleBoardDelete = e => {
     if (confirm('정말 삭제하시겠습니까?')) {
       deleteBoardData(boardId, 'freeBoard');
     }
+  }
+};
+
+/**
+ * @description 상세페이지 닫기버튼 click이벤트 핸들러
+ * @param {*} e
+ */
+export const handleBoardDetailReturn = e => {
+  e.preventDefault();
+  const returnBtn = e.target.closest('a');
+  if (returnBtn) {
+    hideDetail();
   }
 };
