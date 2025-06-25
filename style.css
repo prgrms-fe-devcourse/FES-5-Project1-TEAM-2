@@ -4,26 +4,23 @@
 @import url('./toast/toast.css');
 @import url('./pages/detail/detail.css');
 @import url('./pages/write/write.css');
+@import url('./pages/login/login.css');
 /* @import url('./pages/list/list.css'); */
 
 :root {
-  --bg: #000;
-  --text: #f5f5f5;
+  --bg: #fff;
+  --text: #2a2a2a;
   --text-90: #f5f5f590;
-  --text-primary: #0ad8c9;
-  --border-primary: #0ad8c9;
+  --text-primary: #9b0e17;
+  --border-primary: #9b0e17;
   --border-primary-70: #0ad8c970;
   --border-secondary: #16ffc0;
+  --border: #c8c8c8;
 }
 
 body {
   background-color: var(--bg);
   color: var(--text);
-  li {
-    list-style-type: none;
-  }
-  padding: 0;
-  margin: 0;
 }
 .contentsBox {
   width: 1024px;

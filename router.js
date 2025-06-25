@@ -4,6 +4,7 @@ const routes = [
   { path: '/list', load: () => loadPage('/list') },
   { path: '/detail', load: () => loadPage('/detail') },
   { path: '/write', load: () => loadPage('/write') },
+  { path: '/login', load: () => loadPage('/login') },
 ];
 
 /**

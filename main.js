@@ -1,5 +1,4 @@
 import { setupRouter, renderPage } from './router.js';
-import { auth } from './auth/index.js';
 import { setBoardDataList, setRankData } from './lib/dom/data.js';
 import { setDate } from './lib/dom/render.js';
 import { bindingEvent } from './lib/event/listener.js';
@@ -16,9 +15,6 @@ function init() {
   setRankData('team');
   setRankData('personal');
   setDate();
-
-  // 로그인
-  auth.init();
 }
 // 라우터 초기화
 setupRouter();

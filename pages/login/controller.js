@@ -1,4 +1,4 @@
-import { localStorageUtil } from '../lib/index.js';
+import { localStorageUtil } from '../../lib/index.js';
 import { CO_DIVE_EMAIL, pretendLogin } from './config.js';
 import { elements } from './dom.js';
 import { handleGithubLogin, handleLogin, handleRegister } from './handlers.js';

@@ -1,5 +1,11 @@
 {
-  "users": [],
+  "users": [
+    {
+      "email": "doqntlrdl123@gmail.com",
+      "password": "$2a$10$Ti8s5lUYQBlmDqPiu27h4e2ygcwxLjlk7OOLmfXpkwuo.H6YQhdbC",
+      "id": 1
+    }
+  ],
   "personal": [
     {
       "id": 1,
@@ -37,31 +43,41 @@
       "id": 1,
       "name": "kimTeam",
       "score": 95,
-      "member": ["kim"]
+      "member": [
+        "kim"
+      ]
     },
     {
       "id": 2,
       "name": "parkTeam",
       "score": 195,
-      "member": ["park"]
+      "member": [
+        "park"
+      ]
     },
     {
       "id": 3,
       "name": "naTeam",
       "score": 10,
-      "member": ["park"]
+      "member": [
+        "park"
+      ]
     },
     {
       "id": 4,
       "name": "bulkTema",
       "score": 200,
-      "member": ["park"]
+      "member": [
+        "park"
+      ]
     },
     {
       "id": 5,
       "name": "clock",
       "score": 450,
-      "member": ["park"]
+      "member": [
+        "park"
+      ]
     }
   ],
   "freeBoard": [
