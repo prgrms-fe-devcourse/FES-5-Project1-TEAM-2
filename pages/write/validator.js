@@ -52,6 +52,10 @@ const contentsValidator = contentValue => {
   isNumberValue(contentValue);
 };
 
+/**
+ * @description 입력받은 전체 데이터 유효성 검사
+ * @param {string} requestBody
+ */
 export const writeDataValidator = requestBody => {
   const { category, title, contents, writer, ...rest } = requestBody;
   categoryValidator(category);
