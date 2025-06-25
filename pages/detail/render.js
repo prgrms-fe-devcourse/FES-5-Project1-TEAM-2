@@ -23,7 +23,9 @@ export const renderBoardDetail = BoardData => {
   const writer = getNode('.writer');
   const writeDate = getNode('.writeDate');
   const content = getNode('.contents');
+  const detailContent = getNode('.board-detail-content');
 
+  detailContent.setAttribute('data-id', BoardData.id);
   category.textContent = BoardData.category;
   title.textContent = BoardData.title;
   writer.textContent = BoardData.writer;

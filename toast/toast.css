@@ -5,11 +5,10 @@
   --border: #c8c8c8;
 }
 
-.alert {
+.toast {
   display: flex;
   gap: 10px;
   position: absolute;
-  width: 300px;
   padding: 1rem 2rem;
   border-radius: 8px;
   top: 20px;
