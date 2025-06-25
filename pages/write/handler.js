@@ -2,6 +2,8 @@ import { getNode } from '../../lib/utils/getNode.js';
 import { getWriteRequestBody } from './setData.js';
 import { replaceMarkDown } from '../../lib/utils/markDownReplace.js';
 import { onChangeButtonCssClass, onChangeHiddenTextField } from './dom.js';
+import { writeDataValidator } from './validator.js';
+import { apiService } from '../../lib/api/service.js';
 
 /**
  * 글 작성 후 서버에게 정보 전달
@@ -12,7 +14,9 @@ export const handleSubmitButton = async e => {
   e.preventDefault();
   const requestBody = getWriteRequestBody();
   // try catch 사용자 입력
-  await apiService.post('freeBoard', requestBody);
+  writeDataValidator(requestBody);
+  apiService.post('freeBoard', requestBody);
+  showToast({ message: '게시글이 작성되었습니다', type: 'success' });
 };
 
 /**
