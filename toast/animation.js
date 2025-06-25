@@ -9,7 +9,6 @@ export const alertAnimation = duration => {
 
   tl.set(alert, {
     opacity: 0,
-    visibility: 'visible',
     y: -50,
     scale: 0.8,
   })
@@ -35,8 +34,5 @@ export const alertAnimation = duration => {
       y: -50,
       scale: 0.8,
       duration: 0.3,
-      onComplete: () => {
-        gsap.set(alert, { visibility: 'hidden' });
-      },
     });
 };
