@@ -1,4 +1,4 @@
-import { getApiData } from '../../lib/api/getApi.js';
+import { apiService } from '../../lib/api/service.js';
 import { renderBoard, renderBoardDetail } from './render.js';
 
 /**
@@ -6,7 +6,7 @@ import { renderBoard, renderBoardDetail } from './render.js';
  * @param {string} endpoint
  */
 export const getBoardList = async endpoint => {
-  const response = await getApiData(endpoint);
+  const response = await apiService.get(endpoint);
   renderBoard(response);
 };
 
@@ -16,7 +16,7 @@ export const getBoardList = async endpoint => {
  * @param {string} endpoint
  */
 export const getBoardDetailData = async (boardId, endpoint) => {
-  const response = await getApiData(endpoint);
+  const response = await apiService.get(endpoint);
   const selectedBoardData = response.find(boardData => boardData.id === Number(boardId));
   renderBoardDetail(selectedBoardData);
 };
