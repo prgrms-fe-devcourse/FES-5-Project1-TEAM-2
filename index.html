@@ -70,77 +70,17 @@
             <a href="/detail" data-link>COMMUNITY</a>
           </li>
         </ul>
-        <div class="auth">
-          <button type="button" id="login-button">&lt;login/&gt;</button>
+        <div class="auth show">
+          <button type="button" id="login-button"><a href="/login">&lt;login/&gt;</a></button>
           <button type="button" id="join-button">&lt;join/&gt;</button>
         </div>
-        <div class="auth-logged">
+        <!-- <div class="auth-logged">
           <button type="button" id="mypage-button">&lt;mypage/&gt;</button>
           <button type="button" id="logout">&lt;logout/&gt;</button>
-        </div>
+        </div> -->
       </nav>
       <div id="app" style="opacity: 1">
-        <!-- 캐러셀, 랭킹, 커뮤니티 등 메인페이지 하드코딩 요소 페이지별 JS로 옮기기 -->
-        <!-- 캐러셀 -->
-        <div class="swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img
-                data-swiper-parallax-scale="1.2"
-                data-swiper-parallax-x="200"
-                src="./assets/swiper/1.png"
-                alt="눈물"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                data-swiper-parallax-scale="1.2"
-                data-swiper-parallax-x="200"
-                src="./assets/swiper/2.png"
-                alt="열일"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                data-swiper-parallax-scale="1.2"
-                data-swiper-parallax-x="200"
-                src="./assets/swiper/3.png"
-                alt="뒤짐"
-              />
-            </div>
-          </div>
-        </div>
-
-        <div class="rankingSection">
-          <div class="rankingHeader">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M7.40598 31.4903V28.0612H14.2641V22.7462C12.8639 22.4319 11.6137 21.8389 10.5136 20.9674C9.41341 20.0958 8.60615 19.0028 8.09179 17.6883C5.94863 17.4311 4.15551 16.4953 2.71245 14.8808C1.26938 13.2663 0.547852 11.3731 0.547852 9.20138V7.48685C0.547852 6.54386 0.883614 5.7366 1.55514 5.06507C2.22666 4.39355 3.03392 4.05779 3.97692 4.05779H7.40598V0.628723H24.5513V4.05779H27.9804C28.9234 4.05779 29.7306 4.39355 30.4021 5.06507C31.0737 5.7366 31.4094 6.54386 31.4094 7.48685V9.20138C31.4094 11.3731 30.6879 13.2663 29.2448 14.8808C27.8018 16.4953 26.0087 17.4311 23.8655 17.6883C23.3511 19.0028 22.5439 20.0958 21.4437 20.9674C20.3436 21.8389 19.0934 22.4319 17.6932 22.7462V28.0612H24.5513V31.4903H7.40598ZM7.40598 14.0021V7.48685H3.97692V9.20138C3.97692 10.2873 4.29125 11.266 4.91991 12.1375C5.54857 13.0091 6.37726 13.6306 7.40598 14.0021ZM15.9786 19.4886C17.4074 19.4886 18.6219 18.9885 19.622 17.9884C20.6222 16.9882 21.1222 15.7738 21.1222 14.345V4.05779H10.835V14.345C10.835 15.7738 11.3351 16.9882 12.3353 17.9884C13.3354 18.9885 14.5499 19.4886 15.9786 19.4886ZM24.5513 14.0021C25.58 13.6306 26.4087 13.0091 27.0374 12.1375C27.666 11.266 27.9804 10.2873 27.9804 9.20138V7.48685H24.5513V14.0021Z"
-                fill="#FFCE2D"
-              />
-            </svg>
-            <span class="label">랭킹 조회</span>
-            <span class="updatedDate">2025.06.17</span>
-          </div>
-          <div class="rankingContentsBox">
-            <div class="rankingContents" id="team">
-              <h3>Team</h3>
-            </div>
-
-            <div class="rankingContents" id="personal">
-              <h3>Personal</h3>
-            </div>
-          </div>
-        </div>
-
-        <div class="communitySection">
-          <div class="buttonBox">
-            <button id="free-board" class="is-button-active">자유게시판</button>
-            <button id="group-recruitment">그룹 구인 게시판</button>
-          </div>
-          <div class="communityContentsBox"></div>
-        </div>
-      </div>
+       
     </div>
 
     <footer>
@@ -150,29 +90,6 @@
       </a>
     </footer>
 
-    <!-- 로그인 모달 -->
-    <div class="modal-overlay" id="login-modal">
-      <div class="modal">
-        <!-- 모달 헤더 -->
-        <div class="modal-header">
-          <button class="close-btn" id="close-btn">&times;</button>
-          <div class="modal-logo">CoDive</div>
-          <p class="modal-subtitle">함께 코딩하는 즐거움</p>
-        </div>
 
-        <!-- 모달 바디 -->
-        <div class="modal-body">
-          <!-- GitHub 로그인 버튼 -->
-          <button class="github-login-btn" id="github-btn">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
-              />
-            </svg>
-            GitHub로 계속하기
-          </button>
-        </div>
-      </div>
-    </div>
   </body>
 </html>

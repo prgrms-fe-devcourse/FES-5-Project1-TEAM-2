@@ -1,8 +1,8 @@
-import { showToast } from '../toast/index.js';
+import { showToast } from '../../toast/index.js';
 import { CO_DIVE_EMAIL, GITHUB_CONFIG } from './config.js';
 import { elements } from './dom.js';
-import { localStorageUtil, sessionStorageUtil } from '../lib/index.js';
-import { apiService } from '../lib/api/service.js';
+import { localStorageUtil, sessionStorageUtil } from '../../lib/index.js';
+import { apiService } from '../../lib/api/service.js';
 
 /**
  * 로그인 핸들러

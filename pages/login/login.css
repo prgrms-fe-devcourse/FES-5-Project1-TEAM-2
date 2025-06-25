@@ -1,23 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-:root {
-  --bg: #fff;
-  --text: #2a2a2a;
-  --text-primary: #9b0e17;
-  --border: #c8c8c8;
-}
-body {
+.login-main {
   background-color: var(--bg);
   font-family: 'Inter';
   color: var(--bg);
-  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: clamp(14px, 2.5vw, 16px);
 }
 
-.wrapper {
+.login-wrapper {
   display: flex;
 }
 
@@ -35,7 +28,7 @@ body {
     padding: 5px;
   }
 
-  .logo {
+  .login-logo {
     color: var(--text-primary);
     font-size: clamp(32px, 8vw, 50px);
     margin-bottom: 35px;
