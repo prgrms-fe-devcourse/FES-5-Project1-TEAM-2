@@ -6,7 +6,7 @@ import { handleLogin } from './handlers.js';
  */
 export const loginController = {
   eventBinding() {
-    elements.loginBtn.addEventListener('click', handleLogin);
+    elements.loginForm.addEventListener('submit', handleLogin);
   },
 
   init() {
