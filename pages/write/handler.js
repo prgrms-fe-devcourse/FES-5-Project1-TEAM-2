@@ -1,7 +1,7 @@
 import { getNode } from '../../lib/utils/getNode.js';
 import { getWriteRequestBody } from './setData.js';
-import { removeClass, addClass } from '../../lib/utils/attribute.js';
 import { replaceMarkDown } from '../../lib/utils/markDownReplace.js';
+import { onChangeButtonCssClass, onChangeHiddenTextField } from './dom.js';
 
 /**
  * 글 작성 후 서버에게 정보 전달
@@ -11,29 +11,8 @@ import { replaceMarkDown } from '../../lib/utils/markDownReplace.js';
 export const handleSubmitButton = async e => {
   e.preventDefault();
   const requestBody = getWriteRequestBody();
+  // try catch 사용자 입력
   await apiService.post('freeBoard', requestBody);
-};
-
-/**
- * write, preview 버튼 css class 상태 변경 함수
- * @param {void}
- * @returns {void}
- */
-const onChangeButtonCssClass = (nodeList, node) => {
-  nodeList.forEach(btn => {
-    removeClass(btn, 'is-button-active');
-  });
-  addClass(node, 'is-button-active');
-};
-
-/**
- * write, preview 버튼 hidden 상태 변경 함수
- * @param {void}
- * @returns {void}
- */
-const onChangeButtonHidden = (textArea, preview) => {
-  textArea.hidden = !textArea.hidden;
-  preview.hidden = !preview.hidden;
 };
 
 /**
@@ -51,9 +30,9 @@ export const handleWriteButton = e => {
   onChangeButtonCssClass(buttons, clickedBtn);
 
   if (clickedBtn.id === 'write-Preview-button') {
-    onChangeButtonHidden(textArea, preview);
+    onChangeHiddenTextField(textArea, preview);
     preview.innerHTML = replaceMarkDown(textArea.value);
   } else {
-    onChangeButtonHidden(textArea, preview);
+    onChangeHiddenTextField(textArea, preview);
   }
 };
