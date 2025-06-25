@@ -91,7 +91,7 @@
   }
   hr {
     width: 95%;
-    border: 2px solid;
+    border: 1px solid;
     color: #858080;
   }
 }
@@ -101,6 +101,7 @@
   display: inline-block;
   border-radius: 8px;
   background-color: rgba(155, 14, 23, 0.45);
+  padding: 6.5px 0;
   font-size: 14px;
   font-weight: 700;
   text-align: center;
