@@ -1,4 +1,4 @@
-import { getBoardList } from './getData.js';
+import { getBoardList } from './controller.js';
 import { eventBinding } from './listener.js';
 
 document.addEventListener('DOMContentLoaded', () => {
