@@ -6,7 +6,7 @@
   },
   "scripts": {
     "api": "json-server --watch db.json --port 3001",
-    "dev": "live-server --port=8080 --no-browser --host=localhost",
+    "dev": "live-server --port=8080 --no-browser --host=localhost --entry-file=index.html",
     "start": "npm run api & npm run dev",
     "format": "prettier --write .",
     "format:check": "prettier --check ."

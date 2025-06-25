@@ -25,5 +25,6 @@ setupRouter();
 
 // 초기 페이지 렌더링
 renderPage(window.location.pathname || '/');
+document.getElementById('app').style.opacity = 1;
 
 document.addEventListener('DOMContentLoaded', init);
