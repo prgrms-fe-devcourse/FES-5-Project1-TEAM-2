@@ -1,4 +1,5 @@
 import { apiService } from '../../lib/api/service.js';
+import { getNode } from '../../lib/utils/getNode.js';
 
 /**
  * api request body 생성
@@ -6,9 +7,9 @@ import { apiService } from '../../lib/api/service.js';
  * @returns {void}
  */
 const getWriteRequestBody = () => {
-  const titleValue = document.querySelector('#write-title input').value;
-  const categoryValue = document.querySelector('#write-category input').value;
-  const textAreaValue = document.querySelector('textarea').value;
+  const titleValue = getNode('#write-title input').value;
+  const categoryValue = getNode('#write-category input').value;
+  const textAreaValue = getNode('textarea').value;
   const now = new Date().toLocaleString().trim();
 
   return {

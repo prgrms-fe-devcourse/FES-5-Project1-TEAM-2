@@ -1,10 +1,10 @@
 import { renderWriteCategory, renderWriteTitle, renderTabButton } from './dom.js';
 import { handleSubmitButton } from './controller.js';
+import { getNode } from '../../lib/utils/getNode.js';
 
 renderWriteCategory();
 renderWriteTitle();
 renderTabButton();
 
-const button = document.querySelector('.submit-button');
-
-button.addEventListener('click', handleSubmitButton);
+const submitButton = getNode('.submit-button');
+submitButton.addEventListener('click', handleSubmitButton);

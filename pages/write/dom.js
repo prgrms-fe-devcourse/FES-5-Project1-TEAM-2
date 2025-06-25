@@ -1,3 +1,5 @@
+import { getNode } from '../../lib/utils/getNode.js';
+
 /**
  * 카테고리, 제목 태그 생성
  * @param {string} label
@@ -26,7 +28,7 @@ const createTabButton = label => {
  * @returns {void}  반환값 없음
  */
 export const renderWriteCategory = () => {
-  const category = document.querySelector('#write-category');
+  const category = getNode('#write-category');
   category.insertAdjacentHTML('beforeend', createInputTags('Category'));
 };
 
@@ -36,7 +38,7 @@ export const renderWriteCategory = () => {
  */
 
 export const renderWriteTitle = () => {
-  const title = document.querySelector('#write-title');
+  const title = getNode('#write-title');
   title.insertAdjacentHTML('beforeend', createInputTags('Title'));
 };
 
@@ -45,7 +47,7 @@ export const renderWriteTitle = () => {
  * @returns {void}  반환값 없음
  */
 export const renderTabButton = () => {
-  const buttonBox = document.querySelector('.button-box');
+  const buttonBox = getNode('.button-box');
   buttonBox.insertAdjacentHTML('beforeend', createTabButton('write'));
   buttonBox.insertAdjacentHTML('beforeend', createTabButton('preview'));
 };
