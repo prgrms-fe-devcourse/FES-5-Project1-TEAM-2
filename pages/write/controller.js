@@ -1,4 +1,4 @@
-import { apiService } from '../lib/api/service.js';
+import { apiService } from '../../lib/api/service.js';
 
 /**
  * api request body 생성
