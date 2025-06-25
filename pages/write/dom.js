@@ -20,7 +20,7 @@ const createInputTags = label => {
  * @returns {HTMLDivElement} 태그 생성
  */
 const createTabButton = label => {
-  return `<button id="write-${label}-button" type="button">${label}</button>`;
+  return `<button id="write-${label}-button" type="button" class="${label === 'write' ? 'is-button-active' : ''}">${label}</button>`;
 };
 
 /**
