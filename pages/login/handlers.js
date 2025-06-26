@@ -41,6 +41,7 @@ export const handleLogin = async e => {
     }
 
     showToast({ message: '로그인에 성공 하셨습니다!' });
+    history.pushState(null, '', '/home');
     renderPage('/home');
   } catch {
     showToast({ message: '아이디나 비밀번호를 잘못 입력하셨습니다.', type: 'fail' });

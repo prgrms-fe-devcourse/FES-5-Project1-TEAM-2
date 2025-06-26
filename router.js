@@ -1,6 +1,6 @@
 // 페이지 경로(path)와 해당 페이지를 불러오는 함수
 const routes = [
-  { path: '/', load: () => loadPage('/home') },
+  { path: '/home', load: () => loadPage('/home') },
   { path: '/list', load: () => loadPage('/list') },
   { path: '/detail', load: () => loadPage('/detail') },
   { path: '/write', load: () => loadPage('/write') },
