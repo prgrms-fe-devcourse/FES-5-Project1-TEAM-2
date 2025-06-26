@@ -48,31 +48,41 @@
       "id": 1,
       "name": "kimTeam",
       "score": 95,
-      "member": ["kim"]
+      "member": [
+        "kim"
+      ]
     },
     {
       "id": 2,
       "name": "parkTeam",
       "score": 195,
-      "member": ["park"]
+      "member": [
+        "park"
+      ]
     },
     {
       "id": 3,
       "name": "naTeam",
       "score": 10,
-      "member": ["park"]
+      "member": [
+        "park"
+      ]
     },
     {
       "id": 4,
       "name": "bulkTema",
       "score": 200,
-      "member": ["park"]
+      "member": [
+        "park"
+      ]
     },
     {
       "id": 5,
       "name": "clock",
       "score": 450,
-      "member": ["park"]
+      "member": [
+        "park"
+      ]
     }
   ],
   "freeBoard": [
@@ -111,6 +121,18 @@
       },
       "createdAt": "2025. 6. 25. 오후 1:44:18",
       "updatedAt": "2025. 6. 25. 오후 1:44:18"
+    },
+    {
+      "category": "JavaScript",
+      "title": "liveserver질문",
+      "contents": "# [live - server]\n**구동이 안됨**\n- reloading 됨",
+      "writer": {
+        "userName": "asdf",
+        "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFzZGZAYXNkZi5jb20iLCJpYXQiOjE3NTA5MDcxMjUsImV4cCI6MTc1MDkxMDcyNSwic3ViIjoiMiJ9.wTGL-cRlHI1FmddQzju8TRwUZ1KRGCmV7EzLUHa0bRg"
+      },
+      "createdAt": "2025. 6. 26. 오후 12:07:33",
+      "updatedAt": "2025. 6. 26. 오후 12:07:33",
+      "id": 4
     }
   ],
   "groupBoard": [
