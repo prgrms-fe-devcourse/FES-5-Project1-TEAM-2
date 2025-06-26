@@ -4,7 +4,7 @@ import { setDate } from './lib/dom/render.js';
 import { bindingEvent } from './lib/event/listener.js';
 import { setUiInteraction } from './lib/utils/uiController.js';
 
-function init() {
+export function init() {
   // 이벤트 바인딩
   bindingEvent();
 
