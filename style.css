@@ -93,6 +93,10 @@ nav {
     }
   }
 }
+
+#logout-button {
+  display: none;
+}
 footer {
   position: fixed;
   max-width: 1025px;
