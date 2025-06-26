@@ -8,7 +8,7 @@ import { deleteBoardData, getBoardDetailData } from './controller.js';
  */
 export const handleBoardListClick = e => {
   e.preventDefault();
-  const content = e.target.closest('a');
+  const content = e.target.closest('li');
   const boardDetail = getNode('.board-detail-content');
 
   if (content) {

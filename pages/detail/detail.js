@@ -1,6 +1,4 @@
-import { getBoardList } from './controller.js';
-import { eventBinding } from './listener.js';
+import { loadPage } from './controller.js';
 
 // 게시판
-getBoardList('freeBoard');
-eventBinding();
+loadPage();

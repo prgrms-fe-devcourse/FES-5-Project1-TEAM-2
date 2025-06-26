@@ -5,7 +5,7 @@ import { handleBoardDelete, handleBoardDetailReturn, handleBoardListClick } from
  * @description 이벤트 binding 함수
  */
 export const eventBinding = () => {
-  const boardContent = getNode('.board-list-ul'); //게시판 리스트
+  const boardContent = getNode('.list'); //게시판 리스트
   const deleteButton = getNode('.delete-button'); //삭제버튼
   const returnButton = getNode('.button-area');
   //게시판 리스트 클릭이벤트
