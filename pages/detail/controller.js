@@ -2,21 +2,7 @@ import { apiService } from '../../lib/api/service.js';
 import { getNode } from '../../lib/utils/getNode.js';
 import { showToast } from '../../toast/index.js';
 import { eventBinding } from './listener.js';
-import { checkWriter, renderBoard, renderBoardDetail } from './render.js';
-
-/**
- * @description 게시글 목록 데이터를 가져온다.
- * @param {string} endpoint
- */
-export const getBoardList = async endpoint => {
-  try {
-    const response = await apiService.get(endpoint);
-    renderBoard(response);
-  } catch (error) {
-    showToast({ message: error, duration: 3000, type: 'fail' });
-    throw error;
-  }
-};
+import { checkWriter, renderBoardDetail } from './render.js';
 
 /**
  * @description 게시글 상세 정보 데이터를 가져온다
