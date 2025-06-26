@@ -1,4 +1,5 @@
 import { getNode } from '../../lib/utils/getNode.js';
+import { getBoardList } from './controller.js';
 
 const createBoardItem = listData => {
   return `
@@ -14,7 +15,7 @@ export const setBoardList = boardList => {
 
   const listBox = getNode('.list');
 
-  listBox.insertAdjacentHTML('beforeend', postHTML);
+  listBox.innerHTML = postHTML;
 };
 
 export const toggleBoardTabClass = className => {
@@ -27,4 +28,8 @@ export const toggleBoardTabClass = className => {
     groupBoardBtn.classList.remove('button-active');
     freeBoardBtn.classList.add('button-active');
   }
+};
+
+export const renderBoardList = endPoint => {
+  getBoardList(endPoint);
 };

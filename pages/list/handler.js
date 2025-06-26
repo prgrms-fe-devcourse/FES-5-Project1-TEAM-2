@@ -1,7 +1,6 @@
-import { toggleBoardTabClass } from './dom.js';
+import { renderBoardList, toggleBoardTabClass } from './dom.js';
 
-export const handleButtonActive = e => {
-  const button = e.target.closest('button');
+const handleButtonActive = button => {
   if (button) {
     toggleBoardTabClass(button.id);
   }
@@ -9,4 +8,12 @@ export const handleButtonActive = e => {
 
 export const handleListItem = e => {
   console.log(e.target.closest('li'));
+};
+
+export const handleTapClick = e => {
+  const button = e.target.closest('button');
+  handleButtonActive(button);
+
+  const endPoint = button.dataset.value;
+  renderBoardList(endPoint);
 };
