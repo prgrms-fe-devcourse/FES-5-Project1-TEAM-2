@@ -124,6 +124,9 @@
 }
 .contents-area {
   margin: 15px;
+  .contents {
+    color: black;
+  }
 }
 .board-detail-title {
   color: black;
