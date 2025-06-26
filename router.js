@@ -38,13 +38,13 @@ function findRoute(path) {
 }
 
 // 라우팅 실행 함수
-export async function renderPage(path) {
+export function renderPage(path) {
   const route = findRoute(path);
   if (!route) {
     document.getElementById('app').innerHTML = '<h1>404 Not Found</h1>';
     return;
   }
-  await route.load();
+  route.load();
 }
 
 // 라우터 초기화

@@ -1,6 +1,5 @@
 import { getNode } from '../../lib/utils/getNode.js';
-import { handleButtonActive, handleListItem, handleWriteButton  ,handleTapClick} from './handler.js';
-
+import { handleListItem, handleWriteButton, handleTapClick } from './handler.js';
 
 export const listEventBind = () => {
   const buttonGroup = getNode('.button-group');

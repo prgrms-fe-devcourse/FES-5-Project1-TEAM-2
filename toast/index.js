@@ -17,12 +17,13 @@ const configType = {
 export const showToast = ({ message, duration = 3000, type = 'success' }) => {
   const { icon, color } = configType[type];
 
-  // 기존 토스트가 있으면 제거
+  // 기존 토스트가 있으면 제거s
   const isExisting = document.querySelector('.toast');
   if (isExisting) {
     isExisting.remove();
   }
 
+  console.log(isExisting);
   // 새 토스트 엘리먼트 생성
   const toast = document.createElement('div');
   toast.className = 'toast';
@@ -36,6 +37,7 @@ export const showToast = ({ message, duration = 3000, type = 'success' }) => {
     </div>
   `;
 
+  console.log(toast);
   // 배경색 동적 설정
   toast.style.backgroundColor = color;
 
