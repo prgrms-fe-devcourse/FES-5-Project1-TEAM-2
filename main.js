@@ -2,11 +2,13 @@ import { setupRouter, renderPage } from './router.js';
 import { setBoardDataList, setRankData } from './lib/dom/data.js';
 import { setDate } from './lib/dom/render.js';
 import { bindingEvent } from './lib/event/listener.js';
-import {} from './lib/swiper.js';
+import { setUiInteraction } from './lib/utils/uiController.js';
 
 function init() {
   // 이벤트 바인딩
   bindingEvent();
+
+  setUiInteraction();
 
   // 게시판
   setBoardDataList('freeBoard');
