@@ -3,7 +3,7 @@ body {
   margin: 0 auto;
   /* 세로로 긴 페이지이므로 위아래 마진은 0을 주고 가로는 auto로 하여 페이지 정중앙에 오도록 한다 */
   width: 1500px;
-  height: 1790px;
+  height: 1000px;
   background-color: #fff;
 }
 
@@ -55,12 +55,13 @@ nav a.active {
 }
 
 .container {
-  width: 1190px;
-  height: 1300px;
+  width: 1020px;
+  height: 900px;
   border: 2px solid #9b0e17;
   border-radius: 10px;
   margin: 0 auto;
   padding: 1rem;
+  /* padding-bottom: 100px; */
 }
 
 .button-group {
@@ -98,7 +99,7 @@ nav a.active {
 }
 
 .post-item {
-  width: 1050px;
+  width: 980px;
 
   border-bottom: 1px solid #ccc;
   display: flex;
