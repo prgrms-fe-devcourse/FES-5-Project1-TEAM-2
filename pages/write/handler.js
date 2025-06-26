@@ -4,6 +4,7 @@ import { replaceMarkDown } from '../../lib/utils/markDownReplace.js';
 import { onChangeButtonCssClass, onChangeHiddenTextField } from './dom.js';
 import { writeDataValidator } from './validator.js';
 import { apiService } from '../../lib/api/service.js';
+import { sessionStorageUtil } from '../../lib/index.js';
 
 /**
  * 글 작성 후 서버에게 정보 전달
@@ -12,10 +13,10 @@ import { apiService } from '../../lib/api/service.js';
  */
 export const handleSubmitButton = async e => {
   e.preventDefault();
-  const requestBody = getWriteRequestBody();
-  // try catch 사용자 입력
+  const { writer, accessToken } = sessionStorageUtil.getSession();
+  const requestBody = getWriteRequestBody(writer);
   writeDataValidator(requestBody);
-  apiService.post('freeBoard', requestBody);
+  apiService.post('freeBoard', requestBody, { Authorization: `Bearer ${accessToken}` });
   showToast({ message: '게시글이 작성되었습니다', type: 'success' });
 };
 
