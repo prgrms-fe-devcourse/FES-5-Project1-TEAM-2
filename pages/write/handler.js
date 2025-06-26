@@ -13,8 +13,8 @@ import { sessionStorageUtil } from '../../lib/index.js';
  */
 export const handleSubmitButton = async e => {
   e.preventDefault();
-  const { writer, accessToken } = sessionStorageUtil.getSession();
-  const requestBody = getWriteRequestBody(writer);
+  const { userName, accessToken } = sessionStorageUtil.getSession();
+  const requestBody = getWriteRequestBody(userName, accessToken);
   writeDataValidator(requestBody);
   apiService.post('freeBoard', requestBody, { Authorization: `Bearer ${accessToken}` });
   showToast({ message: '게시글이 작성되었습니다', type: 'success' });

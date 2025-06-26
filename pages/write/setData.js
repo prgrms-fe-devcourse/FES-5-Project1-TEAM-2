@@ -1,4 +1,3 @@
-import { sessionStorageUtil } from '../../lib/index.js';
 import { getNode } from '../../lib/utils/getNode.js';
 
 /**
@@ -6,7 +5,7 @@ import { getNode } from '../../lib/utils/getNode.js';
  * @param {void}
  * @returns {object} request body
  */
-export const getWriteRequestBody = writer => {
+export const getWriteRequestBody = (userName, accessToken) => {
   const titleValue = getNode('#write-title input').value;
   const categoryValue = getNode('#write-category input').value;
   const textAreaValue = getNode('textarea').value;
@@ -16,7 +15,10 @@ export const getWriteRequestBody = writer => {
     category: categoryValue,
     title: titleValue,
     contents: textAreaValue,
-    writer: writer,
+    writer: {
+      userName,
+      accessToken,
+    },
     createdAt: now,
     updatedAt: now,
   };

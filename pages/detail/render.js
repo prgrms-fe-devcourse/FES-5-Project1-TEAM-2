@@ -17,14 +17,15 @@ export const renderBoardDetail = boardData => {
   detailContent.setAttribute('data-id', boardData.id);
   category.textContent = boardData.category;
   title.textContent = boardData.title;
-  writer.textContent = boardData.writer;
+  writer.textContent = boardData.writer.userName;
   writeDate.textContent = boardData.createdAt;
   content.innerHTML = replaceMarkDown(boardData.contents);
 };
 
 export const checkWriter = boardData => {
   const boardToken = boardData.writer.accessToken;
-  const userToken = sessionStorageUtil.getSession().accessToken;
+  const userToken = sessionStorageUtil.getSession() ? sessionStorageUtil.getSession().accessToken : '';
+
   const buttonArea = getNode('.writer-button');
   if (boardToken !== userToken) {
     buttonArea.style.display = 'none';

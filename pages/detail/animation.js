@@ -14,5 +14,9 @@ export const hideDetail = () => {
     duration: 2,
     x: '100%',
     ease: 'power2.in',
+    onComplete: () => {
+      const detail = document.querySelector('.board-detail-content');
+      detail.setAttribute('hidden', '');
+    },
   });
 };
