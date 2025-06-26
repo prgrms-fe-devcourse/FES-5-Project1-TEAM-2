@@ -4,6 +4,11 @@
       "email": "doqntlrdl123@gmail.com",
       "password": "$2a$10$Oy/dtVpUaa7zN2iN6E4pDeBctSVEfduJ.ioQoIYBKLs5xJFNALSFu",
       "id": 1
+    },
+    {
+      "email": "asdf@asdf.com",
+      "password": "$2a$10$03LmlL2PYDwWkw0BpcIYZenhEQc6OXxs8GCSKpaTtPgbARE9lyZue",
+      "id": 2
     }
   ],
   "personal": [
@@ -43,81 +48,107 @@
       "id": 1,
       "name": "kimTeam",
       "score": 95,
-      "member": [
-        "kim"
-      ]
+      "member": ["kim"]
     },
     {
       "id": 2,
       "name": "parkTeam",
       "score": 195,
-      "member": [
-        "park"
-      ]
+      "member": ["park"]
     },
     {
       "id": 3,
       "name": "naTeam",
       "score": 10,
-      "member": [
-        "park"
-      ]
+      "member": ["park"]
     },
     {
       "id": 4,
       "name": "bulkTema",
       "score": 200,
-      "member": [
-        "park"
-      ]
+      "member": ["park"]
     },
     {
       "id": 5,
       "name": "clock",
       "score": 450,
-      "member": [
-        "park"
-      ]
+      "member": ["park"]
     }
   ],
   "freeBoard": [
     {
       "id": 1,
-      "category": "코딩테스트",
+      "category": "JavaScript",
       "title": "1번 알고리즘 문제 풀이방법 공유",
-      "contents": "",
-      "writer": "김영민",
-      "createdAt": "25.06.11.14:00",
-      "updatedAt": "25.06.11.14:00"
+      "contents": "# [필독] 7월 정기 점검 안내\n\n안녕하세요, 커뮤니티 운영팀입니다.\n\n7월 5일(토) 01:00~05:00까지 **서버 정기 점검**이 진행될 예정입니다.  \n점검 시간 동안 서비스 이용이 일시적으로 제한될 수 있으니,  \n회원 여러분의 양해 부탁드립니다.\n\n---\n\n- **점검 일시:** 2025년 7월 5일(토) 01:00~05:00\n- **점검 내용:** 서버 안정화 및 보안 업데이트\n\n---\n\n감사합니다.",
+      "writer": {
+        "userName": "asdf",
+        "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFzZGZAYXNkZi5jb20iLCJpYXQiOjE3NTA5MDY0MjMsImV4cCI6MTc1MDkxMDAyMywic3ViIjoiMiJ9.s6-Ilo_VLpAhqx6qvzmrdE8B92M9EQeZ-kthv-vpPwc"
+      },
+      "createdAt": "2025. 6. 24. 오후 1:44:18",
+      "updatedAt": "2025. 6. 24. 오후 1:44:18"
     },
     {
       "id": 2,
-      "category": "dsfa",
-      "title": "asda",
-      "contents": "asdfafaf",
-      "writer": "유저이름",
-      "createdAt": "2025. 6. 25. 오후 1:44:00",
-      "updatedAt": "2025. 6. 25. 오후 1:44:00"
+      "category": "JavaScript",
+      "title": "closure질문",
+      "contents": "# [필독] 7월 정기 점검 안내\n\n안녕하세요, 커뮤니티 운영팀입니다.\n\n7월 5일(토) 01:00~05:00까지 **서버 정기 점검**이 진행될 예정입니다.  \n점검 시간 동안 서비스 이용이 일시적으로 제한될 수 있으니,  \n회원 여러분의 양해 부탁드립니다.\n\n---\n\n- **점검 일시:** 2025년 7월 5일(토) 01:00~05:00\n- **점검 내용:** 서버 안정화 및 보안 업데이트\n\n---\n\n감사합니다.",
+      "writer": {
+        "userName": "asdf",
+        "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFzZGZAYXNkZi5jb20iLCJpYXQiOjE3NTA5MDY0MjMsImV4cCI6MTc1MDkxMDAyMywic3ViIjoiMiJ9.s6-Ilo_VLpAhqx6qvzmrdE8B92M9EQeZ-kthv-vpPwc"
+      },
+      "createdAt": "2025. 6. 25. 오전 1:44:00",
+      "updatedAt": "2025. 6. 25. 오전 1:44:00"
     },
     {
       "id": 3,
-      "category": "test",
-      "title": "test",
-      "contents": "testest",
-      "writer": "유저이름",
+      "category": "git",
+      "title": "git cli 명령어 질문",
+      "contents": "# [필독] 7월 정기 점검 안내\n\n안녕하세요, 커뮤니티 운영팀입니다.\n\n7월 5일(토) 01:00~05:00까지 **서버 정기 점검**이 진행될 예정입니다.  \n점검 시간 동안 서비스 이용이 일시적으로 제한될 수 있으니,  \n회원 여러분의 양해 부탁드립니다.\n\n---\n\n- **점검 일시:** 2025년 7월 5일(토) 01:00~05:00\n- **점검 내용:** 서버 안정화 및 보안 업데이트\n\n---\n\n감사합니다.",
+      "writer": {
+        "userName": "asdf",
+        "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFzZGZAYXNkZi5jb20iLCJpYXQiOjE3NTA5MDY0MjMsImV4cCI6MTc1MDkxMDAyMywic3ViIjoiMiJ9.s6-Ilo_VLpAhqx6qvzmrdE8B92M9EQeZ-kthv-vpPwc"
+      },
       "createdAt": "2025. 6. 25. 오후 1:44:18",
       "updatedAt": "2025. 6. 25. 오후 1:44:18"
     }
   ],
   "groupBoard": [
     {
-      "id": 4,
+      "id": 1,
       "category": "스터디 구인",
-      "title": "10번 알고리즘 문제 리뷰할 사람 찾아요~",
-      "contents": "",
-      "writer": "김영민",
-      "createdAt": "25.06.11.14:00",
-      "updatedAt": "25.06.11.14:00"
+      "title": "알고리즘 문제 리뷰할 사람 찾아요~",
+      "contents": "# [필독] 7월 정기 점검 안내\n\n안녕하세요, 커뮤니티 운영팀입니다.\n\n7월 5일(토) 01:00~05:00까지 **서버 정기 점검**이 진행될 예정입니다.  \n점검 시간 동안 서비스 이용이 일시적으로 제한될 수 있으니,  \n회원 여러분의 양해 부탁드립니다.\n\n---\n\n- **점검 일시:** 2025년 7월 5일(토) 01:00~05:00\n- **점검 내용:** 서버 안정화 및 보안 업데이트\n\n---\n\n감사합니다.",
+      "writer": {
+        "userName": "asdf",
+        "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFzZGZAYXNkZi5jb20iLCJpYXQiOjE3NTA5MDY0MjMsImV4cCI6MTc1MDkxMDAyMywic3ViIjoiMiJ9.s6-Ilo_VLpAhqx6qvzmrdE8B92M9EQeZ-kthv-vpPwc"
+      },
+      "createdAt": "2025. 6. 25. 오전 10:24:52",
+      "updatedAt": "2025. 6. 25. 오전 10:24:52"
+    },
+    {
+      "id": 2,
+      "category": "스터디 구인",
+      "title": "알고리즘 스터디 구인",
+      "contents": "# [필독] 7월 정기 점검 안내\n\n안녕하세요, 커뮤니티 운영팀입니다.\n\n7월 5일(토) 01:00~05:00까지 **서버 정기 점검**이 진행될 예정입니다.  \n점검 시간 동안 서비스 이용이 일시적으로 제한될 수 있으니,  \n회원 여러분의 양해 부탁드립니다.\n\n---\n\n- **점검 일시:** 2025년 7월 5일(토) 01:00~05:00\n- **점검 내용:** 서버 안정화 및 보안 업데이트\n\n---\n\n감사합니다.",
+      "writer": {
+        "userName": "asdf",
+        "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFzZGZAYXNkZi5jb20iLCJpYXQiOjE3NTA5MDY0MjMsImV4cCI6MTc1MDkxMDAyMywic3ViIjoiMiJ9.s6-Ilo_VLpAhqx6qvzmrdE8B92M9EQeZ-kthv-vpPwc"
+      },
+      "createdAt": "2025. 6. 26. 오후 9:50:52",
+      "updatedAt": "2025. 6. 26. 오후 9:50:52"
+    },
+    {
+      "id": 3,
+      "category": "스터디 구인",
+      "title": "자바스크립트 스터디",
+      "contents": "# [필독] 7월 정기 점검 안내\n\n안녕하세요, 커뮤니티 운영팀입니다.\n\n7월 5일(토) 01:00~05:00까지 **서버 정기 점검**이 진행될 예정입니다.  \n점검 시간 동안 서비스 이용이 일시적으로 제한될 수 있으니,  \n회원 여러분의 양해 부탁드립니다.\n\n---\n\n- **점검 일시:** 2025년 7월 5일(토) 01:00~05:00\n- **점검 내용:** 서버 안정화 및 보안 업데이트\n\n---\n\n감사합니다.",
+      "writer": {
+        "userName": "asdf",
+        "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFzZGZAYXNkZi5jb20iLCJpYXQiOjE3NTA5MDY0MjMsImV4cCI6MTc1MDkxMDAyMywic3ViIjoiMiJ9.s6-Ilo_VLpAhqx6qvzmrdE8B92M9EQeZ-kthv-vpPwc"
+      },
+      "createdAt": "2025. 6. 25. 오후 11:53:52",
+      "updatedAt": "2025. 6. 25. 오후 11:53:52"
     }
   ]
 }
