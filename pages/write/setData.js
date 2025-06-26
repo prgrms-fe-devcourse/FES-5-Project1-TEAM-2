@@ -1,3 +1,4 @@
+import { sessionStorageUtil } from '../../lib/index.js';
 import { getNode } from '../../lib/utils/getNode.js';
 
 /**
@@ -5,7 +6,7 @@ import { getNode } from '../../lib/utils/getNode.js';
  * @param {void}
  * @returns {object} request body
  */
-export const getWriteRequestBody = () => {
+export const getWriteRequestBody = writer => {
   const titleValue = getNode('#write-title input').value;
   const categoryValue = getNode('#write-category input').value;
   const textAreaValue = getNode('textarea').value;
@@ -15,7 +16,7 @@ export const getWriteRequestBody = () => {
     category: categoryValue,
     title: titleValue,
     contents: textAreaValue,
-    writer: '유저이름',
+    writer: writer,
     createdAt: now,
     updatedAt: now,
   };
