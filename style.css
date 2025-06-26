@@ -7,6 +7,7 @@
 @import url('./pages/detail/detail.css');
 @import url('./pages/write/write.css');
 @import url('./pages/login/login.css');
+@import url('./pages/list/list.css');
 
 :root {
   --bg: #fff;
