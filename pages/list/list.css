@@ -91,3 +91,6 @@ footer {
   color: #777;
   font-size: 0.85rem;
 }
+.post-date {
+  width: 250px;
+}
