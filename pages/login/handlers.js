@@ -3,6 +3,7 @@ import { CO_DIVE_EMAIL, GITHUB_CONFIG } from './config.js';
 import { elements } from './dom.js';
 import { localStorageUtil, sessionStorageUtil } from '../../lib/index.js';
 import { apiService } from '../../lib/api/service.js';
+import { renderPage } from '../../router.js';
 
 /**
  * 로그인 핸들러
@@ -39,8 +40,8 @@ export const handleLogin = async e => {
       localStorageUtil.removeValue(CO_DIVE_EMAIL);
     }
 
-    // TODO: 메인으로 넘아가는 기능 추가
     showToast({ message: '로그인에 성공 하셨습니다!' });
+    renderPage('/home');
   } catch {
     showToast({ message: '아이디나 비밀번호를 잘못 입력하셨습니다.', type: 'fail' });
   }
